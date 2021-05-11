@@ -32,7 +32,6 @@ class Game
     while @stick_piles != [1]
       puts "#{player}'s turn"
       move = sticks_to_remove
-      #   puts move
       next unless validate_move(move)
 
       puts k
@@ -43,9 +42,8 @@ class Game
                else
                  'David'
                end
-
     end
-    # puts [@stick_piles]
+
     "#{player} has won the game!"
   end
 end
